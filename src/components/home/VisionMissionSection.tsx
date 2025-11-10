@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Container = styled.section`
   background-color: #8080808a;
-  background: url("/public/assets/images/background/topographic-bg-30pc.png");
+  background: url("/topographic-bg-30pc.png");
 
   padding: 60px 40px;
   margin: 40px 0;

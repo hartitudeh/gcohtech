@@ -6,7 +6,7 @@ import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa"
 
 const Container = styled.section`
   background-color: #f5f5f5;
-  background: url("/public/assets/images/background/topographic-bg-30pc.png");
+  background: url("/topographic-bg-30pc.png");
   padding: 80px 40px;
   // margin: 40px 0;
 
