@@ -55,6 +55,12 @@ const EmailSection = styled.div`
 export default function MiniNav() {
   return (
     <MiniNavContainer>
+      <EmailSection>
+        <span>✉️</span>
+        <a href="mailto:support@gcohtech.edu.ng">support@gcohtech.edu.ng</a>
+        <span>✉️</span>
+        <a href="mailto:gcohtech@gmail.com">gcohtech@gmail.com</a>
+      </EmailSection>
       <SocialLinks>
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
           <span>
@@ -82,10 +88,6 @@ export default function MiniNav() {
           </span>
         </a>
       </SocialLinks>
-      <EmailSection>
-        <span>📧</span>
-        <a href="mailto:info@gracecollege.edu">info@gracecollege.edu</a>
-      </EmailSection>
     </MiniNavContainer>
   )
 }
