@@ -13,6 +13,7 @@ const MiniNavContainer = styled.div`
   @media (max-width: 768px) {
     padding: 10px 20px;
     font-size: 12px;
+    display: none;
   }
 `
 
