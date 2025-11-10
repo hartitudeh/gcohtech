@@ -161,7 +161,7 @@ export default function Navbar() {
   return (
     <NavContainer>
       <NavContent>
-        <Logo to="/"><img src="../../../public/assets/images/gcohtech-logo1.png" style={{height: 50, width: 200}} /></Logo>
+        <Logo to="/"><img src="/gcohtech-logo1.png" style={{height: 60, width: 240}} /></Logo>
         <MenuToggle onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? (
             <span>
