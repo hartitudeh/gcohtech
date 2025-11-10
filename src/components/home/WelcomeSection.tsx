@@ -50,7 +50,7 @@ const Content = styled.div`
 export default function WelcomeSection() {
   return (
     <WelcomeContainer>
-      <Image src="/college-provost-professional.jpg" alt="College Provost" />
+      <Image src="/college-provost-professional.JPG" alt="College Provost" />
       <Content>
         <h2>Welcome Address</h2>
         <p>Dear Students, Parents, and Stakeholders,</p>
