@@ -3,8 +3,8 @@
 import styled from "styled-components"
 
 const Container = styled.div`
-  max-width: 900px;
-  margin: 0 auto;
+  // max-width: 900px;
+  // margin: 0 auto;
 `
 
 const Title = styled.h2`
@@ -19,10 +19,7 @@ const Title = styled.h2`
 `
 
 const MissionBox = styled.div`
-  background-color: var(--color-surface);
-  padding: 3rem;
-  border-radius: 1rem;
-  border: 2px solid var(--color-accent);
+  color:  var(--color-text-primary);
   margin-bottom: 2rem;
 
   p {
@@ -41,36 +38,38 @@ const MissionBox = styled.div`
   }
 `
 
-const ObjectivesContainer = styled.div`
+const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 30px;
+  margin-top: 30px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 20px;
   }
 `
 
-const ObjectiveCard = styled.div`
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-top: 4px solid var(--color-primary);
+const Card = styled.div`
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   h3 {
-    font-size: 1.125rem;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
-    font-weight: bold;
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 10px;
   }
 
   p {
-    color: var(--color-text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.8;
-    margin: 0;
+    font-size: 14px;
+    color: #666;
   }
 `
 
@@ -92,37 +91,37 @@ export default function MissionStatement() {
         Our Key Objectives
       </h3>
 
-      <ObjectivesContainer>
-        <ObjectiveCard>
+      <Grid>
+        <Card>
           <h3>Quality Education</h3>
           <p>Deliver evidence-based, contemporary health education that meets international standards.</p>
-        </ObjectiveCard>
+        </Card>
 
-        <ObjectiveCard>
+        <Card>
           <h3>Practical Training</h3>
           <p>Provide hands-on clinical experience through partnerships with leading healthcare facilities.</p>
-        </ObjectiveCard>
+        </Card>
 
-        <ObjectiveCard>
+        <Card>
           <h3>Ethical Practice</h3>
           <p>Instill strong ethical values and professional responsibility in all our graduates.</p>
-        </ObjectiveCard>
+        </Card>
 
-        <ObjectiveCard>
+        <Card>
           <h3>Research & Innovation</h3>
           <p>Encourage research and innovation to advance healthcare knowledge and practice.</p>
-        </ObjectiveCard>
+        </Card>
 
-        <ObjectiveCard>
+        <Card>
           <h3>Community Engagement</h3>
           <p>Foster community partnerships and outreach programs to improve public health.</p>
-        </ObjectiveCard>
+        </Card>
 
-        <ObjectiveCard>
+        <Card>
           <h3>Continuous Improvement</h3>
           <p>Regularly update curriculum and teaching methods to reflect current healthcare trends.</p>
-        </ObjectiveCard>
-      </ObjectivesContainer>
+        </Card>
+      </Grid>
     </Container>
   )
 }

@@ -3,6 +3,8 @@
 import { useState } from "react"
 import styled from "styled-components";
 import AboutCollege from "../../components/about/about-college";
+import MissionStatement from "../../components/about/mission-statement";
+import VisionStatement from "../../components/about/vision-statement";
 
 const Container = styled.div`
   max-width: 1400px;
@@ -228,65 +230,13 @@ export default function About() {
 
         {activeTab === "vision" && (
           <Section>
-            <h2>Our Vision</h2>
-            <p>
-              To be a leading institution in healthcare education, recognized globally for producing compassionate,
-              competent, and innovative healthcare professionals who transform lives and advance the healthcare
-              industry.
-            </p>
-            <h3 style={{ marginTop: "30px", marginBottom: "15px" }}>Vision Pillars</h3>
-            <Grid>
-              <Card>
-                <h3>Excellence</h3>
-                <p>Striving for the highest standards in education, research, and healthcare practice.</p>
-              </Card>
-              <Card>
-                <h3>Innovation</h3>
-                <p>Embracing new technologies and methodologies to advance healthcare education and practice.</p>
-              </Card>
-              <Card>
-                <h3>Compassion</h3>
-                <p>Fostering empathy and patient-centered care in all healthcare professionals we train.</p>
-              </Card>
-              <Card>
-                <h3>Leadership</h3>
-                <p>Developing leaders who can drive positive change in the healthcare industry and society.</p>
-              </Card>
-            </Grid>
+            <VisionStatement />
           </Section>
         )}
 
         {activeTab === "mission" && (
           <Section>
-            <h2>Our Mission</h2>
-            <p>
-              To provide comprehensive, quality healthcare education that combines theoretical knowledge with practical
-              skills, fostering critical thinking and professional excellence in our students while maintaining the
-              highest standards of integrity and ethics.
-            </p>
-            <h3 style={{ marginTop: "30px", marginBottom: "15px" }}>Mission Objectives</h3>
-            <Grid>
-              <Card>
-                <h3>Education</h3>
-                <p>
-                  Deliver evidence-based, comprehensive healthcare education programs that meet international standards.
-                </p>
-              </Card>
-              <Card>
-                <h3>Research</h3>
-                <p>Promote research and innovation to advance healthcare knowledge and practice.</p>
-              </Card>
-              <Card>
-                <h3>Community Service</h3>
-                <p>
-                  Engage in community health initiatives and provide healthcare services to underserved populations.
-                </p>
-              </Card>
-              <Card>
-                <h3>Professional Development</h3>
-                <p>Support continuous learning and professional development of our faculty and students.</p>
-              </Card>
-            </Grid>
+            <MissionStatement />
           </Section>
         )}
 

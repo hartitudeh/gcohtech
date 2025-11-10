@@ -3,8 +3,8 @@
 import styled from "styled-components"
 
 const Container = styled.div`
-  max-width: 900px;
-  margin: 0 auto;
+  // max-width: 900px;
+  // margin: 0 auto;
 `
 
 const Title = styled.h2`
@@ -19,15 +19,12 @@ const Title = styled.h2`
 `
 
 const VisionBox = styled.div`
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
-  color: white;
-  padding: 3rem;
+  color:  var(--color-text-primary);
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.8;
     margin: 0;
   }
@@ -41,38 +38,53 @@ const VisionBox = styled.div`
   }
 `
 
-const DetailsContainer = styled.div`
+// const Grid = styled.div`
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//   gap: 2rem;
+//   margin-top: 2rem;
+
+//   @media (max-width: 768px) {
+//     grid-template-columns: 1fr;
+//     gap: 1.5rem;
+//   }
+// `
+
+const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 20px;
   }
 `
 
-const DetailCard = styled.div`
-  background-color: var(--color-surface);
-  padding: 2rem;
-  border-radius: 1rem;
-  border-left: 4px solid var(--color-accent);
+const Card = styled.div`
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   h3 {
-    font-size: 1.25rem;
-    color: var(--color-primary);
-    margin-bottom: 1rem;
-    font-weight: bold;
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 10px;
   }
 
   p {
-    color: var(--color-text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.8;
-    margin: 0;
+    font-size: 14px;
+    color: #666;
   }
 `
+
 
 export default function VisionStatement() {
   return (
@@ -87,22 +99,22 @@ export default function VisionStatement() {
         </p>
       </VisionBox>
 
-      <DetailsContainer>
-        <DetailCard>
+      <Grid>
+        <Card>
           <h3>Excellence</h3>
           <p>We strive for excellence in all aspects of education, research, and service delivery.</p>
-        </DetailCard>
+        </Card>
 
-        <DetailCard>
+        <Card>
           <h3>Innovation</h3>
           <p>We embrace innovation and continuous improvement in healthcare education and practice.</p>
-        </DetailCard>
+        </Card>
 
-        <DetailCard>
+        <Card>
           <h3>Global Impact</h3>
           <p>We aim to create healthcare professionals who can make a positive impact globally.</p>
-        </DetailCard>
-      </DetailsContainer>
+        </Card>
+      </Grid>
     </Container>
   )
 }
