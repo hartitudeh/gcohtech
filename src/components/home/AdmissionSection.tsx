@@ -80,24 +80,34 @@ export default function AdmissionSection() {
       <Title>Current Admission in Progress</Title>
       <Grid>
         <Card>
-          <h3>📚 Nursing</h3>
+          <h3>📚 Community  Health Technology</h3>
           <p>Bachelor of Science in Nursing with clinical training</p>
           <Button to="/register">Apply Now</Button>
         </Card>
         <Card>
-          <h3>🔬 Laboratory Science</h3>
+          <h3>🔬 Public Health Technology</h3>
           <p>Medical Laboratory Science and Diagnostics</p>
           <Button to="/register">Apply Now</Button>
         </Card>
+        {/* <Card>
+          <h3>📚 Nursing</h3>
+          <p>Bachelor of Science in Nursing with clinical training</p>
+          <Button to="/register">Coming Soon</Button>
+        </Card>
+        <Card>
+          <h3>🔬 Laboratory Science</h3>
+          <p>Medical Laboratory Science and Diagnostics</p>
+          <Button to="/register">Coming Soon</Button>
+        </Card> */}
         <Card>
           <h3>🦷 Dental Health</h3>
           <p>Dental Hygiene and Oral Health Programs</p>
-          <Button to="/register">Apply Now</Button>
+          <Button to="/register">Coming Soon</Button>
         </Card>
         <Card>
           <h3>💊 Pharmacy</h3>
           <p>Pharmaceutical Sciences and Practice</p>
-          <Button to="/register">Apply Now</Button>
+          <Button to="/register">Coming Soon</Button>
         </Card>
       </Grid>
     </Container>

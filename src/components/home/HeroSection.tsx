@@ -130,17 +130,27 @@ const Indicator = styled.button<{ isActive: boolean }>`
 
 const slides = [
   {
-    image: "/medical-students-in-classroom.jpg",
+    image: "/gate.jpeg",
     title: "Welcome to Grace College of Health",
     subtitle: "Excellence in Healthcare Education",
   },
+  // {
+  //   image: "/medical-students-in-classroom.jpg",
+  //   title: "Welcome to Grace College of Health",
+  //   subtitle: "Excellence in Healthcare Education",
+  // },
   {
-    image: "/hospital-medical-facility.jpg",
+    image: "/enviros.jpeg",
     title: "State-of-the-Art Facilities",
     subtitle: "Modern Learning Environment",
   },
+  // {
+  //   image: "/hall.jpeg",
+  //   title: "Expert Faculty",
+  //   subtitle: "Learn from Industry Professionals",
+  // },
   {
-    image: "/medical-professionals-teaching.jpg",
+    image: "/exam.jpeg",
     title: "Expert Faculty",
     subtitle: "Learn from Industry Professionals",
   },

@@ -74,7 +74,6 @@ const SocialLinks = styled.div`
 `
 
 const FooterBottom = styled.div`
-  border-top: 1px solid #333;
   padding-top: 20px;
   text-align: center;
   color: #aaa;

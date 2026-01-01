@@ -50,7 +50,7 @@ const Content = styled.div`
 export default function WelcomeSection() {
   return (
     <WelcomeContainer>
-      <Image src="/college-provost-professional.jpg" alt="College Provost" />
+      <Image src="/rector.JPG" alt="College Provost" />
       <Content>
         <h2>Welcome Address</h2>
         <p>Dear Students, Parents, and Stakeholders,</p>
@@ -69,9 +69,9 @@ export default function WelcomeSection() {
           difference in the healthcare industry and society at large.
         </p>
         <p className="provost-title">
-          Prof. Morenikeji Adetunji
+          Pst. Amos Adetunji
           <br />
-          Provost, Grace College of Health
+          Rector, Grace College of Health
         </p>
       </Content>
     </WelcomeContainer>
